@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Arial";
+}
+
+.section-1 {
+    width: 100%;
+    min-height: 100%;
+    background-image: linear-gradient(to right, #FFF3B0, #FFAAF7);
+}
+
+/**navbar section **/
+
+.navbar {
+    width: 100%;
+    height: 30px;
+    padding: 4%;
+    background-color: #FF7070;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li {
+    display: none;
+}
+
+a {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.burger-icon {
+    width: 35px;
+    height: 25px;
+
+}
+
+@media screen and (min-width:768px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li {
+        font-size: 18px;
+        font-weight: 600;
+        display: inline;
+        margin-right: 20px;
+        align-self: auto;
+
+    }
+}
+
+@media screen and (min-width:992px) {
+    li {
+        font-size: 22px;
+    }
+}
+
+/** section1 content **/
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    gap: 10px
+}
+
+.information {
+    order: 1;
+    width: 88%;
+    height: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.heading-1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.discription {
+    font-size: 9px;
+    line-height: 15px;
+}
+
+.button {
+    color: #ffc8c8;
+    font-size: 12px;
+    height: 26px;
+    width: 100px;
+    border: none;
+    background-color: #ff7171;
+}
+
+@media screen and (min-width:576px) {
+    .information {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        gap: 10px;
+
+    }
+
+    .discription {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .info-container {
+        flex-direction: row;
+        padding-bottom: 0px;
+        gap: 18px
+    }
+
+    .information {
+        width: 100%;
+        height: 80vh;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        order: 0;
+    }
+
+    .heading-1 {
+        font-size: 34px;
+    }
+
+    .discription {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .button {
+        height: 40px;
+        width: 140px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .info-container {
+        flex-direction: row;
+        padding-bottom: 0px;
+        gap: 10px
+    }
+
+    .heading-1 {
+        font-size: 50px;
+    }
+
+    .discription {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .button {
+        height: 44px;
+        width: 200px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .heading-1 {
+        font-size: 55px;
+    }
+
+    .discription {
+        font-size: 21px;
+        line-height: 36px;
+    }
+}
+
+.section-1-image {
+    width: 100%;
+    height: 50%;
+}
+
+@media screen and (min-width:768px) {
+    .section-1-image {
+        width: 42vw;
+        height: 92vh;
+    }
+}
+
+/** section2 content **/
+
+.section-2 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, #fff7ad, #ffb5ee);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+@media screen and (min-width:576px) {
+    .section-2 {
+        justify-content: center;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .section-2 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    margin-bottom: 0px;
+    gap: 10px;
+}
+
+.image-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.image {
+    width: 40vw;
+    height: 20vh;
+}
+
+.image-1 {
+    width: 40vw;
+    height: 42vh;
+}
+
+@media screen and (min-width:576px) {
+    .images-container {
+        width: auto;
+        height: auto;
+    }
+
+    .image {
+        width: 38vw;
+        height: 28vh;
+        align-items: center;
+    }
+
+    .image-1 {
+        width: 38vw;
+        height: 57vh;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .image {
+        width: 18vw;
+        height: 25vh;
+    }
+
+    .image-1 {
+        width: 18vw;
+        height: 52vh;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .images-container {
+        width: auto;
+        height: auto;
+        margin: none;
+    }
+
+    .image {
+        width: 20vw;
+    }
+
+    .image-1 {
+        width: 20vw;
+    }
+}
+
+.card {
+    width: 78%;
+    margin: 30px;
+    height: 170px;
+    padding: 18px;
+    background-color: #ff7171;
+}
+
+.side-heading {
+    font-size: 12px;
+}
+
+.card-heading {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.click-arrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.click {
+    font-size: 12px;
+}
+
+.arrow-icon {
+    width: 18px;
+    height: 18px;
+
+}
+
+@media screen and (min-width:576px) {
+    .card {
+        width: 70%;
+        height: 150px;
+        align-items: center;
+    }
+
+    .side-heading {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .card {
+        width: 36%;
+        min-height: 222px;
+        align-items: center;
+    }
+
+    .side-heading {
+        font-size: 20px;
+    }
+
+    .card-heading {
+        font-size: 28px;
+    }
+
+    .click-arrow {
+        gap: 8px;
+    }
+
+    .click {
+        font-size: 20px;
+    }
+
+    .arrow-icon {
+        width: 30px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .card {
+        width: 30%;
+        height: 150px;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .card-heading {
+        font-size: 30px;
+    }
+}
